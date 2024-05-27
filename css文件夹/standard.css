@@ -1,0 +1,61 @@
+.back{
+    background: rgb(17,63,61) ;
+    height: 40em;
+    width: 45.7rem;
+    position: relative;
+    z-index: -1;
+}
+.content{
+    background: rgba(62,188,202,0.3);
+    z-index: 1;
+    position: absolute;
+    width:30rem;
+   left:8rem;
+    right:8rem;
+    top:3rem;
+    display: flex;
+}
+.transform{
+    color:rgb(250,218,161);
+    font-family:ruanbi,serif;
+}
+.transform div{
+    padding-bottom: 4rem;
+
+}
+.hobby img{
+    width:10rem;
+}
+.hobby{
+    color:rgb(250,218,161);
+    right:0;
+    font-family:ruanbi,serif;
+}
+.hobby div{
+    padding-bottom: 4rem;
+}
+.hobby div:last-child {
+    padding-bottom: 0;
+}
+.game{
+    width:60rem;
+    color:rgb(250,218,161);
+    font-family: ruanbi,serif;
+    font-size: 1.5rem;
+}
+.comic img{
+    width: 20rem;
+    height:auto;
+    padding-left: 5rem;
+}
+.comic {
+    font-size: 4rem;
+    font-family: ruanbi,serif;
+    color:rgb(250,218,161);
+}
+.ending{
+    font-family: yuanti, serif,serif;
+    color:rgba(250,218,161,0.6);
+}
+
+

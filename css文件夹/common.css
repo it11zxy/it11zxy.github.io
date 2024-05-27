@@ -1,0 +1,134 @@
+.guide {
+    background: rgba(3,38,58,0.5);
+    margin:0 auto 0;
+    width:1240px;
+    display: flex;
+    justify-content:flex-end;
+
+}
+.shortcut{
+    background: rgba(20,68,106,0.5) ;
+    position:fixed;
+    width: 1707px;
+    z-index: 100;
+}
+
+.shortcut .guide{
+    height:50px;
+    box-sizing:border-box;
+
+}
+.shortcut ul{
+   display:flex;
+    padding-left: 35px;
+    line-height:35px;
+}
+.shortcut li a{
+    padding:0px 15px;
+    color:rgb(254,254,254);
+    border-left: 1px solid rgb(30,41,61);
+    box-shadow: 1px 1px 1px 1px;
+    margin:0 10px;
+    font-size: 17px;
+}
+.head{
+    border-radius:25px;
+    width: 50px;
+    height: 50px;
+    display:flex;
+    position: absolute;
+    left: 170px;
+    top:0;
+}
+.name{
+    border-radius:25px;
+    width: 250px;
+    height: 50px;
+    display:flex;
+    position: absolute;
+    left: 7rem;
+    top:13px;
+    color:rgb(255,252,153);
+    font-size: 24px;
+    font-family: ruanbi;
+}
+/*导入字体*/
+@font-face{
+    font-family:ruanbi;
+    src:url('../iconfont/沐瑶软笔手写体/沐瑶软笔手写体1.00/字体.ttf');
+}
+@font-face{
+    font-family:yuanti;
+    src:url('../iconfont/江城圆体3.6/江城圆体 500W.ttf');
+}
+/*底部菜单栏设置*/
+.footer{
+    background:  url("../images/ground.png") rgb(91,74,66)  center ;
+    height:800px;
+}
+/*上下盒子渐变*/
+.transition{
+    background: linear-gradient(
+    to bottom,
+    rgb(4,0,3) ,
+    rgba(63,44,26,0.2)
+    ) ;
+    height: 800px;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+
+}
+.left{
+    left:300px;
+    display: flex;
+    top:250px;
+    color: rgb(159,125,80) ;
+    font-family: 'yuanti', serif;
+    z-index: 100;
+}
+.left dl:first-child{
+    margin-right: 200px;
+}
+.left dd{
+    padding-top: 50px;
+
+}
+.left dt{
+    font-size: 35px;
+}
+.left a{
+    color:rgb(205,179,128);
+}
+.right{
+    right:600px;
+    color: rgb(214,200,75);
+}
+.right,.left{
+    position:absolute;
+
+}
+.right img{
+    transform: scale(0.3) translate(200%,30%);
+    border-radius: 200px;
+}
+.right div:nth-child(2){
+    font: normal normal 30px/1 ruanbi;
+    transform: translate(530px,-150px);
+}
+
+.container{
+    position: relative;
+}
+@media screen and (max-width: 1100px){
+    body{
+        min-width: 100%;
+    }
+    .shortcut,.guide,.name{
+        width:100%;
+    }
+    img{
+        width:140%;
+    }
+}
+
